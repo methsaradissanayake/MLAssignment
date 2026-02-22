@@ -1,0 +1,10 @@
+pandas==2.*
+numpy==1.*
+scikit-learn==1.*
+xgboost==2.*
+shap==0.44.*
+optuna==3.5.*
+streamlit==1.*
+matplotlib==3.*
+requests
+beautifulsoup4
