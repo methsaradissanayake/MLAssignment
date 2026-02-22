@@ -26,7 +26,7 @@ class Preprocessor:
     def select_features(self, ignore_cols=None):
         """Drops unneeded text columns, retains encoded/numeric features."""
         if ignore_cols is None:
-            ignore_cols = ['Title', 'Description', 'PublishedDate', 'Link', 'ImageURL', 'Location', 'Brand', 'Model', 'Location_Clean']
+            ignore_cols = ['Title', 'Description', 'PublishedDate', 'Link', 'ImageURL', 'Location', 'Brand', 'Model', 'Location_Clean', 'Price_Normalized', 'Mileage_Normalized']
             
         existing_drops = [c for c in ignore_cols if c in self.df.columns]
         self.df = self.df.drop(columns=existing_drops)

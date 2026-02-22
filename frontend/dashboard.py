@@ -123,9 +123,6 @@ with col2:
         else:
             user_inputs[feature] = st.number_input(f"{feature}", value=float(mean_val))
             
-    # Hidden normalizers
-    if 'Price_Normalized' in features: user_inputs['Price_Normalized'] = 0.0
-    if 'Mileage_Normalized' in features: user_inputs['Mileage_Normalized'] = 0.0
 
 with col3:
     st.markdown("#### 📍 Location")
